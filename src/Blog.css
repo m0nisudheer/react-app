@@ -1,0 +1,109 @@
+#blog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    padding: 100px 10px 0 10px;
+    gap: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    grid-template-areas: 
+        "a b c d";
+}
+
+#blog-item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 15px;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background-color: white;
+}
+
+
+#blog-item img {
+    width: auto;
+    height: 220px;
+    transition: transform 0.8s ease;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#blog-item img:hover {
+    transform: scale(1.08);
+}
+
+#blog-item aside {
+    font-size: 18px;
+    color:lightsalmon;
+    margin-bottom: 5px;
+}
+
+
+#blog-item h2 {
+    padding: 5px 0;
+    font-size: 20px;
+    color: #333;
+    margin: 0px;
+}
+
+#blog-item p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#blog-item h4 {
+    font-size: 20px;
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    #blog {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        /* margin: 0px 0px 5px 0px; */
+        grid-template-areas:
+            "a b"
+            "c d";
+    }
+    #blog-item h2 {
+        font-size: 24px;
+    }
+
+    #blog-item p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #blog {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "a b"
+            "c d";
+    }
+    #blog-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    #blog-item aside
+    {
+        font-size: 14px;
+    }
+
+    #blog-item p {
+        font-size: 14px;
+    }
+
+    #blog-item h2 {
+        font-size: 14px;
+    }
+    #blog-item h4 {
+        font-size: 13px;
+    }
+}

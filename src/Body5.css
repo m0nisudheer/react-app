@@ -1,0 +1,101 @@
+#sec6 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows:repeat(2,1fr); 
+    gap: 0px 20px;
+    grid-template-areas: 
+        "a a a a a a"
+        ". b c d e .";         
+}
+#sec6 > div {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red;  */
+}
+#sec6 > div:nth-child(1) {
+    padding: 10px 150px 10px 150px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-area: a;
+    text-align: justify;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+#sec6 > div:nth-child(2) {
+   grid-area: b;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#sec6 > div:nth-child(3) {
+   grid-area: c;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+#sec6 > div:nth-child(4) {
+   grid-area: d;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+#sec6 > div:nth-child(5) {
+    grid-area: e;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+#sec6>div p{
+    font-size: 40px;
+    font-family:serif;
+}
+
+
+@media (max-width: 768px) {
+    #sec6 {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, 1fr);  
+        gap: 5px 5px;
+        grid-template-areas: 
+            "a a"
+            "b c"
+            "d e";
+    }
+
+    #sec6 > div {
+        height: auto;
+        padding: 5px; 
+    }
+
+    #sec6 > div:nth-child(1) {
+        padding: 10px;
+        font-size: 20px; 
+    }
+    #sec6 > div p {
+        font-size: 25px; 
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    #sec6 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);    
+        gap: 10px 5px;
+        grid-template-areas: 
+            "a a"   
+            "b c"   
+            "d e";  
+    }
+
+    #sec6 > div {
+        height: auto;
+        padding: 5px;
+    }
+
+    #sec6 > div:nth-child(1) {
+        padding: 10px;
+        font-size: 18px;
+    }
+    #sec6>div p {
+        font-size: 26px;
+    }
+}
