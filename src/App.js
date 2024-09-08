@@ -1,4 +1,5 @@
 import React from 'react';
+// import { BrowserRouter,Route, Routes } from 'react-router-dom';
 import { HashRouter,Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Body from './Body';
@@ -14,6 +15,7 @@ import Blog from './Blog';
 
 function App() {
   return (
+    // <BrowserRouter>
     <HashRouter>
       <Header/>
       <Routes>
@@ -32,7 +34,9 @@ function App() {
         <Route path="/Shop" element={<Shop/>} /> 
         <Route path="/Blog" element={<Blog/>}/>
       </Routes>
-    </HashRouter>
+      </HashRouter>
+    // </BrowserRouter>
+
   );
 }
 

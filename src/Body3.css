@@ -96,6 +96,10 @@ strike
             "b c"
             "d e"; 
     }
+    #sec4 > div:nth-child(1)
+    {
+        font-size: 26px;
+    }
     #sec4 > div h2 {
         font-size: 24px;
     }
@@ -117,6 +121,10 @@ strike
        width: 150px;
        height: 150px;
        border-radius: 8px;
+    }
+    #sec4 > div:nth-child(1)
+    {
+        font-size: 23px;
     }
 
 

@@ -13,6 +13,11 @@ function Header() {
     setNavBar(prev => !prev);
   };
 
+  const closeNav = () => {
+    setNavBar(false);
+  };
+
+
   return (
     <div>
       <div className="text">
@@ -23,10 +28,16 @@ function Header() {
           <img src='https://png.pngtree.com/png-vector/20220708/ourmid/pngtree-skin-care-logo-png-image_5774040.png' alt="Logo" />
         </div>
         <ul className={`links ${navBar ? 'active' : ''}`}>
-        <li><Link to='/'>Home</Link></li>
+        {/* <li><Link to='/'>Home</Link></li>
           <li><Link to='/Shop'>Shop</Link></li>
           <li><Link to='/blog'>Blog</Link></li>
-          <li><Link to='/Contact'>Contact</Link></li>
+          <li><Link to='/Contact'>Contact</Link></li> */}
+
+          <li><Link to='/' onClick={closeNav}>Home</Link></li>
+          <li><Link to='/Shop' onClick={closeNav}>Shop</Link></li>
+          <li><Link to='/blog' onClick={closeNav}>Blog</Link></li>
+          <li><Link to='/Contact' onClick={closeNav}>Contact</Link></li>
+      
         </ul>
         <div className='icon'>
           <FaSearch />

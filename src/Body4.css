@@ -84,7 +84,11 @@
 
 @media (max-width: 480px) {
     #sec5 {
+        grid-template-columns: 1fr;
         padding: 40px 0;
+        grid-template-areas: 
+            "a"
+            "b"; 
     }
 
     #sec5 > div h2 {

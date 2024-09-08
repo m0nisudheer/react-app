@@ -12,6 +12,7 @@
     height: 100px;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
     /* border: 2px solid red;  */
 }
 #sec6 > div:nth-child(1) {

@@ -73,7 +73,11 @@
 
 @media (max-width: 480px) {
     #sec3 {
+        grid-template-columns: 1fr;
         padding: 15px ; 
+        grid-template-areas: 
+            "a"
+            "b";
     }
     #sec3 h1{
         font-size: 25px;
@@ -92,6 +96,6 @@
 
     #sec3 img {
         height: 250px; 
-        width: 400px; 
+        width: 100%; 
     }
 }

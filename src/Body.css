@@ -77,7 +77,11 @@
 
 @media (max-width: 480px) {
     #sec {
+        grid-template-columns: 1fr;
         padding: 50px 0px 50px 0px;
+        grid-template-areas: 
+            "a"
+            "b";
     }
 
     #sec h1 {

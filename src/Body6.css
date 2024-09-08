@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 40px;
+    padding: 30px 10px 10px 30px;
     grid-template-areas: 
         "a b c d";
 }
@@ -15,7 +15,6 @@
     /* box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;  */
     overflow: hidden; 
     /* border: 2px solid red; */
-    padding: 5px;
 }
 
 #sec7 > div img {
@@ -51,43 +50,40 @@
 @media (max-width: 768px) {
     #sec7 {
         grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: repeat(3, auto);  
-        gap: 5px;
+        grid-template-rows: repeat(2, auto);  
+        gap: 10px;
         grid-template-areas: 
             "a a"
             "b c"
-            "d e";
+            "d .";
     }   
 
-    #sec7 > div {
+    /* #sec7 > div {
         padding: 8px;
-    }
+    } */
     #sec7 >div p{
         padding: 0px 10px;
     }
 
     #sec7 > div img {
         height: 250px;
-        width: 230px;
+        width: 250px;
     }
 }
 
 @media (max-width: 480px) {
     #sec7 {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);    
+        grid-template-rows: repeat(4, auto);    
         gap: 5px;
         grid-template-areas: 
            "a"
            "b"
            "c"
-           "d"
-           "e"; 
+           "d"; 
     }
     
-    #sec7 > div {
-        padding: 6px;
-    }
+   
     #sec7 >div p{
         
         padding: 0px 10px;
@@ -99,6 +95,6 @@
     }
     #sec7 > div img {
       width: 350px;
-      height: 300px;
+      height: 350px;
     }
 }
