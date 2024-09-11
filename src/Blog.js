@@ -8,15 +8,13 @@ const Blog = () => {
     <div id='blog'>
       {
         BlogObject.map((blog,index)=>(
-          <BlogItem key={index} blog={blog} />
+          <BlogItem key={index} blog={blog}/>
+          // console.log(index)))
+          //  console.log(blog)))
         ))
       }
       {/* <BlogItem blog={BlogObject[0]}/>
       <BlogItem blog={BlogObject[1]}/> */}
-
-     
-
-
     </div>
   )
 }

@@ -13,6 +13,8 @@ function Contact() {
   const Change = (e) => {
     const { id, value } = e.target;
     setForm((prev) => ({ ...prev, [id]: value }));
+  //  console.log(id);
+  //console.log(value);
    // console.log(e.target.value);
    e.target.setCustomValidity('');
   };

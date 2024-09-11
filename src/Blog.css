@@ -41,7 +41,7 @@
 }
 
 
-#blog-item h2 {
+#blog-item h3 {
     padding: 5px 0;
     font-size: 20px;
     color: #333;
@@ -70,12 +70,21 @@
             "a b"
             "c d";
     }
-    #blog-item h2 {
-        font-size: 24px;
+    #blog-item h3 {
+        font-size: 20px;
     }
 
     #blog-item p {
-        font-size: 20px;
+        font-size: 15px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #blog-item h4
+    {
+        font-size: 15px;
     }
 }
 
@@ -98,12 +107,17 @@
 
     #blog-item p {
         font-size: 14px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
-    #blog-item h2 {
+    #blog-item h3 {
         font-size: 14px;
     }
     #blog-item h4 {
-        font-size: 13px;
+        font-size: 14px;
     }
 }

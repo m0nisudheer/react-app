@@ -10,13 +10,17 @@ function Body3() {
 <div>
     <h1>Our Products</h1>
   </div>
-  {Object.slice(0, 4).map((ele, index) => (
+  {/* {Object.slice(0, 4).map((ele, index) => (
     <Product key={index} product={ele} />
-))}
+))} */}
     {/* <Product product={Object[0]} />
     <Product product={Object[1]} />
     <Product product={Object[2]} />
     <Product product={Object[3]} /> */}
+
+{Object && Object.length > 0  ?  Object.slice(0, 4).map((ele, index) => (
+      <Product key={index} product={ele} />))  :   <p>No products available</p>}
+
 
     
     {/* <div><h1>Our Products</h1></div>
